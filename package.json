@@ -34,9 +34,11 @@
   },
   "devDependencies": {
     "@gaincompliance/eslint-config-gain": "0.7.11",
+    "@travi/any": "1.7.5",
     "babel-preset-travi": "1.1.0",
     "babel-register": "6.26.0",
     "chai": "4.1.2",
+    "chai-as-promised": "7.1.1",
     "codecov": "3.0.2",
     "commitlint-config-gain": "1.0.5",
     "cz-conventional-changelog": "2.1.0",
@@ -48,5 +50,9 @@
     "rimraf": "2.6.2",
     "rollup": "0.58.2",
     "sinon": "5.0.7"
+  },
+  "dependencies": {
+    "@travi/javascript-scaffolder": "1.13.1",
+    "@travi/project-scaffolder": "2.1.0"
   }
 }
