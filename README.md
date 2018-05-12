@@ -1,7 +1,5 @@
 # scaffolder-sub-command
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/GainCompliance/scaffolder-sub-command.svg)](https://greenkeeper.io/)
-
 scaffolder sub-command for commander
 
 <!-- consumer badges -->
@@ -14,14 +12,15 @@ scaffolder sub-command for commander
 <!-- contribution badges -->
 [![Conventional Commits][commit-convention-badge]][commit-convention-link]
 [![Commitizen friendly][commitizen-badge]][commitizen-link]
+[![Greenkeeper badge](https://badges.greenkeeper.io/GainCompliance/scaffolder-sub-command.svg)](https://greenkeeper.io/)
 [![PRs Welcome][PRs-badge]][PRs-link]
 
-[npm-link]: https://www.npmjs.com/package/@travi/scaffolder-sub-command
-[npm-badge]: https://img.shields.io/npm/v/@travi/scaffolder-sub-command.svg
+[npm-link]: https://www.npmjs.com/package/@gaincompliance/scaffolder-sub-command
+[npm-badge]: https://img.shields.io/npm/v/@gaincompliance/scaffolder-sub-command.svg
 [license-link]: LICENSE
-[license-badge]: https://img.shields.io/github/license/travi/scaffolder-sub-command.svg
-[ci-link]: https://travis-ci.com/travi/scaffolder-sub-command
-[ci-badge]: https://img.shields.io/travis/travi/scaffolder-sub-command.svg?branch=master
+[license-badge]: https://img.shields.io/github/license/GainCompliance/scaffolder-sub-command.svg
+[ci-link]: https://travis-ci.com/GainCompliance/scaffolder-sub-command
+[ci-badge]: https://img.shields.io/travis/GainCompliance/scaffolder-sub-command.svg?branch=master
 [commit-convention-link]: https://conventionalcommits.org
 [commit-convention-badge]: https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg
 [commitizen-link]: http://commitizen.github.io/cz-cli/
