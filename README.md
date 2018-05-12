@@ -1,5 +1,7 @@
 # scaffolder-sub-command
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/GainCompliance/scaffolder-sub-command.svg)](https://greenkeeper.io/)
+
 scaffolder sub-command for commander
 
 <!-- consumer badges -->
