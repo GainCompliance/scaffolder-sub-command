@@ -53,6 +53,6 @@
   },
   "dependencies": {
     "@travi/javascript-scaffolder": "1.13.1",
-    "@travi/project-scaffolder": "2.1.0"
+    "@travi/project-scaffolder": "3.0.0-beta.1"
   }
 }

@@ -22,7 +22,8 @@ suite('scaffolder factories', () => {
     javascriptScaffolder.scaffold
       .withArgs({
         ...options,
-        configs: {eslint: {prefix: '@gaincompliance/gain', packageName: '@gaincompliance/eslint-config-gain'}}
+        configs: {eslint: {prefix: '@gaincompliance/gain', packageName: '@gaincompliance/eslint-config-gain'}},
+        overrides: {githubAccount: 'GainCompliance'}
       })
       .resolves(output);
 
