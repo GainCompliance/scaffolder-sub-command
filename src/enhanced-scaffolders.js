@@ -4,6 +4,6 @@ export function javascript(options) {
   return scaffoldJavaScript({
     ...options,
     configs: {eslint: {prefix: '@gaincompliance/gain', packageName: '@gaincompliance/eslint-config-gain'}},
-    overrides: {githubAccount: 'GainCompliance'}
+    npmAccount: 'gaincompliance'
   });
 }
