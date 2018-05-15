@@ -23,7 +23,10 @@ suite('scaffolder factories', () => {
       .withArgs({
         ...options,
         configs: {eslint: {prefix: '@gaincompliance/gain', packageName: '@gaincompliance/eslint-config-gain'}},
-        npmAccount: 'gaincompliance'
+        overrides: {
+          npmAccount: 'gaincompliance',
+          author: {name: 'Gain Compliance', url: 'https://github.com/GainCompliance'}
+        }
       })
       .resolves(output);
 
