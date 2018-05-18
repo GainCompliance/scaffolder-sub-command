@@ -5,9 +5,11 @@ export function addSubCommand(program) {
   program
     .command('scaffold')
     .description('scaffold a new project')
-    .action(() => scaffold({languages: {JavaScript: javascript}, overrides: {githubAccount: 'GainCompliance'}})
-      .catch(err => {
-        console.error(err);     // eslint-disable-line no-console
-        process.exitCode = (err.data && err.data.code) || 1;
-      }));
+    .action(() => scaffold({
+      languages: {JavaScript: javascript},
+      overrides: {githubAccount: 'GainCompliance', copyrightHolder: 'Gain Compliance'}
+    }).catch(err => {
+      console.error(err);     // eslint-disable-line no-console
+      process.exitCode = (err.data && err.data.code) || 1;
+    }));
 }
