@@ -1,7 +1,7 @@
 {
   "name": "@gaincompliance/scaffolder-sub-command",
   "description": "scaffolder sub-command for commander",
-  "version": "0.0.0-semantically-released",
+  "version": "1.0.0-beta.1",
   "main": "lib/index.cjs.js",
   "module": "lib/index.es.js",
   "license": "MIT",
@@ -25,7 +25,8 @@
     "greenkeeper:upload-lockfile": "greenkeeper-lockfile-upload"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "tag": "beta"
   },
   "config": {
     "commitizen": {
