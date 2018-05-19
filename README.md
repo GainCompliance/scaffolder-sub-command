@@ -8,6 +8,7 @@ scaffolder sub-command for commander
 
 <!-- status badges -->
 [![Build Status][ci-badge]][ci-link]
+[![Codecov](https://img.shields.io/codecov/c/github/gaincompliance/scaffolder-sub-command)](https://codecov.io/github/gaincompliance/scaffolder-sub-command)
 
 <!-- contribution badges -->
 [![Conventional Commits][commit-convention-badge]][commit-convention-link]
