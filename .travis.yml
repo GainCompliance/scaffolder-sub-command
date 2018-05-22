@@ -7,6 +7,9 @@ addons:
     - libstdc++-4.9-dev
 notifications:
   email: false
+branches:
+  except:
+  - "/^v\\d+\\.\\d+\\.\\d+$/"
 install:
 - npm install
 - gem install travis
