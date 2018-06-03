@@ -1,4 +1,5 @@
 import * as javascriptScaffolder from '@travi/javascript-scaffolder';
+import {scaffold as scaffoldTravis} from '@travi/travis-scaffolder-javascript';
 import any from '@travi/any';
 import {assert} from 'chai';
 import sinon from 'sinon';
@@ -30,7 +31,8 @@ suite('scaffolder factories', () => {
         overrides: {
           npmAccount: 'gaincompliance',
           author: {name: 'Gain Compliance', url: 'https://github.com/GainCompliance'}
-        }
+        },
+        ciServices: {Travis: {scaffolder: scaffoldTravis, public: true, private: true}}
       })
       .resolves(output);
 
