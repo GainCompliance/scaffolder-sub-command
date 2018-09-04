@@ -1,14 +1,34 @@
 # scaffolder-sub-command
 
-scaffolder sub-command for commander
+scaffolder [sub-command](https://github.com/tj/commander.js#command-specific-options)
+for [commander](https://github.com/tj/commander.js)
+
+<!-- status badges -->
+[![Build Status][ci-badge]][ci-link]
+[![Codecov](https://img.shields.io/codecov/c/github/GainCompliance/scaffolder-sub-command.svg)](https://codecov.io/github/gaincompliance/scaffolder-sub-command)
+
+## Usage
 
 <!-- consumer badges -->
 [![npm][npm-badge]][npm-link]
 [![MIT license][license-badge]][license-link]
 
-<!-- status badges -->
-[![Build Status][ci-badge]][ci-link]
-[![Codecov](https://img.shields.io/codecov/c/github/GainCompliance/scaffolder-sub-command.svg)](https://codecov.io/github/gaincompliance/scaffolder-sub-command)
+### Installation
+
+```sh
+$ npm install @gaincompliance/scaffolder-sub-command -S
+```
+
+### Adding this sub-command to a [commander](https://github.com/tj/commander.js) program
+
+```js
+import program from 'commander';
+import {addSubCommand} from '@gaincompliance/scaffolder-sub-command';
+
+addSubCommand(program);
+```
+
+## Contribution
 
 <!-- contribution badges -->
 [![Conventional Commits][commit-convention-badge]][commit-convention-link]
@@ -16,6 +36,19 @@ scaffolder sub-command for commander
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 [![Greenkeeper badge](https://badges.greenkeeper.io/GainCompliance/scaffolder-sub-command.svg)](https://greenkeeper.io/)
 [![PRs Welcome][PRs-badge]][PRs-link]
+
+### Dependencies
+
+```sh
+$ nvm install
+$ npm install
+```
+
+### Verification
+
+```sh
+$ npm test
+```
 
 [npm-link]: https://www.npmjs.com/package/@gaincompliance/scaffolder-sub-command
 [npm-badge]: https://img.shields.io/npm/v/@gaincompliance/scaffolder-sub-command.svg
