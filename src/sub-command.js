@@ -1,5 +1,5 @@
 import {scaffold as scaffoldProject} from '@travi/project-scaffolder';
-import {scaffold as scaffoldGithub} from '@travi/github-scaffolder';
+import {scaffold as scaffoldGithub, prompt} from '@travi/github-scaffolder';
 import {javascript} from './enhanced-scaffolders';
 
 export function addSubCommand(program) {
@@ -8,7 +8,7 @@ export function addSubCommand(program) {
     .description('scaffold a new project')
     .action(() => scaffoldProject({
       languages: {JavaScript: javascript},
-      vcsHosts: {GitHub: {scaffolder: scaffoldGithub, public: true, private: true}},
+      vcsHosts: {GitHub: {scaffolder: scaffoldGithub, prompt, public: true, private: true}},
       overrides: {githubAccount: 'GainCompliance', copyrightHolder: 'Gain Compliance'}
     }).catch(err => {
       console.error(err);     // eslint-disable-line no-console

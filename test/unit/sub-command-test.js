@@ -2,7 +2,7 @@ import sinon from 'sinon';
 import {assert} from 'chai';
 import any from '@travi/any';
 import * as projectScaffolder from '@travi/project-scaffolder';
-import {scaffold as scaffoldGithub} from '@travi/github-scaffolder';
+import {scaffold as scaffoldGithub, prompt} from '@travi/github-scaffolder';
 import * as scaffolder from '../../src/sub-command';
 import {javascript} from '../../src/enhanced-scaffolders';
 
@@ -37,7 +37,7 @@ suite('scaffold-project sub-command', () => {
       projectScaffolder.scaffold,
       {
         languages: {JavaScript: javascript},
-        vcsHosts: {GitHub: {scaffolder: scaffoldGithub, public: true, private: true}},
+        vcsHosts: {GitHub: {scaffolder: scaffoldGithub, prompt, public: true, private: true}},
         overrides: {githubAccount: 'GainCompliance', copyrightHolder: 'Gain Compliance'}
       }
     ));
