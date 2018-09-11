@@ -16,10 +16,9 @@ suite('scaffolder factories', () => {
 
   teardown(() => sandbox.restore());
 
-  test('that the custom properties are passed along with the provided options', () => {
+  test('that the custom properties are passed along with the provided options', async () => {
     const options = any.simpleObject();
     const output = any.simpleObject();
-
     javascriptScaffolder.scaffold
       .withArgs({
         ...options,
@@ -36,6 +35,6 @@ suite('scaffolder factories', () => {
       })
       .resolves(output);
 
-    return assert.becomes(javascript(options), output);
+    assert.equal(await javascript(options), output);
   });
 });

@@ -8,10 +8,21 @@ export function addSubCommand(program) {
     .description('scaffold a new project')
     .action(() => scaffoldProject({
       languages: {JavaScript: javascript},
-      vcsHosts: {GitHub: {scaffolder: scaffoldGithub, prompt, public: true, private: true}},
-      overrides: {githubAccount: 'GainCompliance', copyrightHolder: 'Gain Compliance'}
-    }).catch(err => {
-      console.error(err);     // eslint-disable-line no-console
-      process.exitCode = (err.data && err.data.code) || 1;
-    }));
+      vcsHosts: {
+        GitHub: {
+          scaffolder: scaffoldGithub,
+          prompt: prompt({account: 'GainCompliance'}),
+          public: true,
+          private: true
+        }
+      },
+      overrides: {
+        githubAccount: 'GainCompliance',
+        copyrightHolder: 'Gain Compliance'
+      }
+    })
+      .catch(err => {
+        console.error(err);     // eslint-disable-line no-console
+        process.exitCode = (err.data && err.data.code) || 1;
+      }));
 }

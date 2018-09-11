@@ -2,12 +2,13 @@ import sinon from 'sinon';
 import {assert} from 'chai';
 import any from '@travi/any';
 import * as projectScaffolder from '@travi/project-scaffolder';
-import {scaffold as scaffoldGithub, prompt} from '@travi/github-scaffolder';
+import * as githubScaffolder from '@travi/github-scaffolder';
 import * as scaffolder from '../../src/sub-command';
 import {javascript} from '../../src/enhanced-scaffolders';
 
 suite('scaffold-project sub-command', () => {
   let sandbox, command, description, action;
+  const prompt = () => undefined;
 
   setup(() => {
     sandbox = sinon.createSandbox();
@@ -17,6 +18,7 @@ suite('scaffold-project sub-command', () => {
     action = sinon.stub();
 
     sandbox.stub(projectScaffolder, 'scaffold');
+    sandbox.stub(githubScaffolder, 'prompt');
     sandbox.stub(console, 'error');
 
     command.withArgs('scaffold').returns({description});
@@ -30,6 +32,7 @@ suite('scaffold-project sub-command', () => {
 
   test('that language scaffolders are provided to the project scaffolder', () => {
     projectScaffolder.scaffold.resolves();
+    githubScaffolder.prompt.withArgs({account: 'GainCompliance'}).returns(prompt);
 
     scaffolder.addSubCommand({command});
 
@@ -37,7 +40,7 @@ suite('scaffold-project sub-command', () => {
       projectScaffolder.scaffold,
       {
         languages: {JavaScript: javascript},
-        vcsHosts: {GitHub: {scaffolder: scaffoldGithub, prompt, public: true, private: true}},
+        vcsHosts: {GitHub: {scaffolder: githubScaffolder.scaffold, prompt, public: true, private: true}},
         overrides: {githubAccount: 'GainCompliance', copyrightHolder: 'Gain Compliance'}
       }
     ));
