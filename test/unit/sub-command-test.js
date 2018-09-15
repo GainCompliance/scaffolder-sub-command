@@ -41,7 +41,7 @@ suite('scaffold-project sub-command', () => {
       {
         languages: {JavaScript: javascript},
         vcsHosts: {GitHub: {scaffolder: githubScaffolder.scaffold, prompt, public: true, private: true}},
-        overrides: {githubAccount: 'GainCompliance', copyrightHolder: 'Gain Compliance'}
+        overrides: {copyrightHolder: 'Gain Compliance'}
       }
     ));
   });

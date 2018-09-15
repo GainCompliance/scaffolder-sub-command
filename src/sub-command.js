@@ -17,7 +17,6 @@ export function addSubCommand(program) {
         }
       },
       overrides: {
-        githubAccount: 'GainCompliance',
         copyrightHolder: 'Gain Compliance'
       }
     })
