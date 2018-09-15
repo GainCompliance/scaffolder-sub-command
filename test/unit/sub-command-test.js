@@ -4,7 +4,7 @@ import any from '@travi/any';
 import * as projectScaffolder from '@travi/project-scaffolder';
 import * as githubScaffolder from '@travi/github-scaffolder';
 import * as scaffolder from '../../src/sub-command';
-import {javascript} from '../../src/enhanced-scaffolders';
+import {githubPrompt, javascript} from '../../src/enhanced-scaffolders';
 
 suite('scaffold-project sub-command', () => {
   let sandbox, command, description, action;
@@ -40,7 +40,7 @@ suite('scaffold-project sub-command', () => {
       projectScaffolder.scaffold,
       {
         languages: {JavaScript: javascript},
-        vcsHosts: {GitHub: {scaffolder: githubScaffolder.scaffold, prompt, public: true, private: true}},
+        vcsHosts: {GitHub: {scaffolder: githubScaffolder.scaffold, prompt: githubPrompt, public: true, private: true}},
         overrides: {copyrightHolder: 'Gain Compliance'}
       }
     ));
