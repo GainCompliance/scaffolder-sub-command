@@ -1,4 +1,5 @@
 import {scaffold as scaffoldJavaScript} from '@travi/javascript-scaffolder';
+import {prompt} from '@travi/github-scaffolder';
 import {scaffold as scaffoldTravis} from '@travi/travis-scaffolder-javascript';
 
 export function javascript(options) {
@@ -15,4 +16,8 @@ export function javascript(options) {
     },
     ciServices: {Travis: {scaffolder: scaffoldTravis, public: true, private: true}}
   });
+}
+
+export function githubPrompt() {
+  return prompt({account: 'GainCompliance'});
 }
