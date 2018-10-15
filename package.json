@@ -20,9 +20,7 @@
     "build": "run-s clean build:*",
     "build:js": "rollup -c",
     "watch": "run-s 'build:js -- --watch'",
-    "prepublishOnly": "run-s build",
-    "greenkeeper:update-lockfile": "greenkeeper-lockfile-update",
-    "greenkeeper:upload-lockfile": "greenkeeper-lockfile-upload"
+    "prepublishOnly": "run-s build"
   },
   "publishConfig": {
     "access": "public"
@@ -42,7 +40,6 @@
     "codecov": "3.1.0",
     "commitlint-config-gain": "1.0.6",
     "cz-conventional-changelog": "2.1.0",
-    "greenkeeper-lockfile": "^2.5.0",
     "husky": "^1.0.0-rc.8",
     "mocha": "5.2.0",
     "npm-run-all": "4.1.3",
