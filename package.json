@@ -52,7 +52,7 @@
   "dependencies": {
     "@travi/github-scaffolder": "1.0.0",
     "@travi/javascript-scaffolder": "3.15.0",
-    "@travi/project-scaffolder": "5.0.4",
+    "@travi/project-scaffolder": "5.0.5",
     "@travi/travis-scaffolder-javascript": "1.4.5"
   }
 }
