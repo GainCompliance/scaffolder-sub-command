@@ -8,7 +8,7 @@ export function javascript(options) {
     configs: {
       eslint: {prefix: '@gaincompliance/gain', packageName: '@gaincompliance/eslint-config-gain'},
       commitlint: {name: 'gain', packageName: 'commitlint-config-gain'},
-      babelPreset: {name: 'gain', packageName: 'babel-preset-gain'}
+      babelPreset: {name: '@gaincompliance', packageName: '@gaincompliance/babel-preset'}
     },
     overrides: {
       npmAccount: 'gaincompliance',
