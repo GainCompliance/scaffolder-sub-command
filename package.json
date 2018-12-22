@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@gaincompliance/eslint-config-gain": "^1.0.0",
-    "@travi/any": "1.8.4",
+    "@travi/any": "1.8.5",
     "babel-preset-travi": "1.4.2",
     "babel-register": "6.26.0",
     "chai": "^4.2.0",
