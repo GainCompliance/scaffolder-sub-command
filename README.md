@@ -28,6 +28,14 @@ import {addSubCommand} from '@gaincompliance/scaffolder-sub-command';
 addSubCommand(program);
 ```
 
+### Execution
+
+```sh
+$ mkdir <name of project> # it is recommended to name the directory to match the repo name
+$ cd <name of project>
+$ <name of containing commander instance> scaffold # gain scaffold
+```
+
 ## Contribution
 
 <!-- contribution badges -->
