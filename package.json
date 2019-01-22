@@ -53,6 +53,6 @@
     "@travi/github-scaffolder": "2.0.0",
     "@travi/javascript-scaffolder": "4.1.1",
     "@travi/project-scaffolder": "5.1.1",
-    "@travi/travis-scaffolder-javascript": "1.6.0"
+    "@travi/travis-scaffolder-javascript": "1.7.0"
   }
 }
