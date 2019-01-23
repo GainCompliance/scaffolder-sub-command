@@ -27,7 +27,8 @@ suite('scaffolder factories', () => {
         configs: {
           eslint: {prefix: '@gaincompliance/gain', packageName: '@gaincompliance/eslint-config-gain'},
           commitlint: {name: 'gain', packageName: 'commitlint-config-gain'},
-          babelPreset: {name: '@gaincompliance', packageName: '@gaincompliance/babel-preset'}
+          babelPreset: {name: '@gaincompliance', packageName: '@gaincompliance/babel-preset'},
+          remark: '@gaincompliance/remark-preset-lint'
         },
         overrides: {
           npmAccount: 'gaincompliance',
