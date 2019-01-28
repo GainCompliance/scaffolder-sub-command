@@ -53,7 +53,7 @@
     "sinon": "^7.0.0"
   },
   "dependencies": {
-    "@travi/github-scaffolder": "3.0.0",
+    "@travi/github-scaffolder": "3.0.1",
     "@travi/javascript-scaffolder": "4.2.0",
     "@travi/project-scaffolder": "5.2.0",
     "@travi/travis-scaffolder-javascript": "1.7.1"
