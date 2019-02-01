@@ -71,7 +71,7 @@ $ npm test
 [license-link]: LICENSE
 [license-badge]: https://img.shields.io/github/license/GainCompliance/scaffolder-sub-command.svg
 [ci-link]: https://travis-ci.com/GainCompliance/scaffolder-sub-command
-[ci-badge]: https://img.shields.io/travis/GainCompliance/scaffolder-sub-command.svg?branch=master
+[ci-badge]: https://img.shields.io/travis/com/GainCompliance/scaffolder-sub-command/master.svg
 [commit-convention-link]: https://conventionalcommits.org
 [commit-convention-badge]: https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg
 [commitizen-link]: http://commitizen.github.io/cz-cli/
