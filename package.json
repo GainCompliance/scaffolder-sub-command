@@ -53,6 +53,7 @@
     "sinon": "^7.0.0"
   },
   "dependencies": {
+    "@gaincompliance/python-scaffolder": "1.0.0-alpha.1",
     "@travi/github-scaffolder": "3.0.3",
     "@travi/javascript-scaffolder": "5.0.0",
     "@travi/node-app-engine-standard-scaffolder": "1.0.0-alpha.1",

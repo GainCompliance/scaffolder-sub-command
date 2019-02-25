@@ -1,5 +1,6 @@
 import {scaffold as scaffoldProject} from '@travi/project-scaffolder';
 import {scaffold as scaffoldGithub} from '@travi/github-scaffolder';
+import {scaffold as scaffoldPython} from '@gaincompliance/python-scaffolder';
 import {githubPrompt, javascript} from './enhanced-scaffolders';
 
 export function addSubCommand(program) {
@@ -7,7 +8,7 @@ export function addSubCommand(program) {
     .command('scaffold')
     .description('scaffold a new project')
     .action(() => scaffoldProject({
-      languages: {JavaScript: javascript},
+      languages: {JavaScript: javascript, Python: scaffoldPython},
       vcsHosts: {GitHub: {scaffolder: scaffoldGithub, prompt: githubPrompt, public: true, private: true}},
       overrides: {copyrightHolder: 'Gain Compliance'}
     })

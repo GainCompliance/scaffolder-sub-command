@@ -3,6 +3,7 @@ import {assert} from 'chai';
 import any from '@travi/any';
 import * as projectScaffolder from '@travi/project-scaffolder';
 import * as githubScaffolder from '@travi/github-scaffolder';
+import {scaffold as scaffoldPython} from '@gaincompliance/python-scaffolder';
 import * as scaffolder from '../../src/sub-command';
 import {githubPrompt, javascript} from '../../src/enhanced-scaffolders';
 
@@ -39,7 +40,7 @@ suite('scaffold-project sub-command', () => {
     return action.getCall(0).args[0]().then(() => assert.calledWith(
       projectScaffolder.scaffold,
       {
-        languages: {JavaScript: javascript},
+        languages: {JavaScript: javascript, Python: scaffoldPython},
         vcsHosts: {GitHub: {scaffolder: githubScaffolder.scaffold, prompt: githubPrompt, public: true, private: true}},
         overrides: {copyrightHolder: 'Gain Compliance'}
       }
