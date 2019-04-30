@@ -55,7 +55,7 @@
   "dependencies": {
     "@gaincompliance/python-scaffolder": "1.0.0-alpha.1",
     "@travi/github-scaffolder": "3.5.0",
-    "@travi/javascript-scaffolder": "6.13.0",
+    "@travi/javascript-scaffolder": "6.14.0",
     "@travi/node-app-engine-standard-scaffolder": "1.0.0-alpha.1",
     "@travi/project-scaffolder": "6.3.0",
     "@travi/travis-scaffolder-javascript": "1.12.0"
