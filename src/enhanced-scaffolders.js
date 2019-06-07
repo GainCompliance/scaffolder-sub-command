@@ -7,7 +7,7 @@ export function javascript(options) {
   return scaffoldJavaScript({
     ...options,
     configs: {
-      eslint: {prefix: '@gaincompliance', packageName: '@gaincompliance/eslint-config'},
+      eslint: {scope: '@gaincompliance'},
       commitlint: {name: 'gain', packageName: 'commitlint-config-gain'},
       babelPreset: {name: '@gaincompliance', packageName: '@gaincompliance/babel-preset'},
       remark: '@gaincompliance/remark-preset-lint'
