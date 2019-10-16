@@ -1,22 +1,13 @@
 language: node_js
-addons:
-  apt:
-    sources:
-    - ubuntu-toolchain-r-test
-    packages:
-    - libstdc++-4.9-dev
 notifications:
   email: false
 branches:
   except:
   - "/^v\\d+\\.\\d+\\.\\d+$/"
-install:
-- npm install
-- gem install travis
 after_success: npm run coverage:report
 deploy:
   provider: script
-  skip_cleanup: true
+  edge: true
   script: npx semantic-release
 env:
   global:

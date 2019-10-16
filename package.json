@@ -12,7 +12,7 @@
   "scripts": {
     "clean": "rimraf lib/",
     "lint:js": "remark --frail .",
-    "lint:travis": "travis lint --no-interactive",
+    "lint:travis": "travis-lint .travis.yml",
     "test": "run-s lint:* test:*",
     "test:unit:base": "mocha --recursive test/unit",
     "test:unit": "nyc run-s test:unit:base",
@@ -50,7 +50,8 @@
     "rimraf": "3.0.0",
     "rollup": "1.24.0",
     "rollup-plugin-auto-external": "^2.0.0",
-    "sinon": "^7.4.2"
+    "sinon": "^7.4.2",
+    "travis-lint": "^1.0.0"
   },
   "dependencies": {
     "@gaincompliance/python-scaffolder": "^1.1.3",
