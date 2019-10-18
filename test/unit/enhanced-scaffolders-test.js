@@ -2,6 +2,7 @@ import * as javascriptScaffolder from '@travi/javascript-scaffolder';
 import * as githubScaffolder from '@travi/github-scaffolder';
 import {scaffold as scaffoldTravis} from '@travi/travis-scaffolder-javascript';
 import {scaffold as scaffoldAppEngine} from '@travi/node-app-engine-standard-scaffolder';
+import {scaffold as scaffoldHapi} from '@form8ion/hapi-scaffolder';
 import any from '@travi/any';
 import {assert} from 'chai';
 import sinon from 'sinon';
@@ -38,6 +39,9 @@ suite('scaffolder factories', () => {
         ciServices: {Travis: {scaffolder: scaffoldTravis, public: true, private: true}},
         hosts: {
           'App Engine Standard': {projectTypes: ['node'], scaffolder: scaffoldAppEngine}
+        },
+        applicationTypes: {
+          Hapi: {scaffolder: scaffoldHapi}
         }
       })
       .resolves(output);
