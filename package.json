@@ -60,6 +60,6 @@
     "@travi/javascript-scaffolder": "7.13.0",
     "@travi/node-app-engine-standard-scaffolder": "1.2.0",
     "@travi/project-scaffolder": "7.2.0",
-    "@travi/travis-scaffolder-javascript": "1.13.0"
+    "@travi/travis-scaffolder-javascript": "1.14.0"
   }
 }
