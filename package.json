@@ -58,7 +58,7 @@
     "@gaincompliance/python-scaffolder": "1.1.3",
     "@travi/github-scaffolder": "4.2.0",
     "@travi/javascript-scaffolder": "8.0.0",
-    "@travi/node-app-engine-standard-scaffolder": "1.2.0",
+    "@travi/node-app-engine-standard-scaffolder": "1.2.1",
     "@travi/project-scaffolder": "7.2.0",
     "@travi/travis-scaffolder-javascript": "2.0.0"
   }
