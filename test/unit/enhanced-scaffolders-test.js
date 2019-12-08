@@ -3,6 +3,7 @@ import * as githubScaffolder from '@travi/github-scaffolder';
 import {scaffold as scaffoldTravis} from '@travi/travis-scaffolder-javascript';
 import {scaffold as scaffoldAppEngine} from '@travi/node-app-engine-standard-scaffolder';
 import {scaffold as scaffoldHapi} from '@form8ion/hapi-scaffolder';
+import {scaffold as scaffoldReactComponents} from '@form8ion/react-components-scaffolder';
 import any from '@travi/any';
 import {assert} from 'chai';
 import sinon from 'sinon';
@@ -42,6 +43,9 @@ suite('scaffolder factories', () => {
         },
         applicationTypes: {
           Hapi: {scaffolder: scaffoldHapi}
+        },
+        packageTypes: {
+          'React Component Library': {scaffolder: scaffoldReactComponents}
         }
       })
       .resolves(output);
