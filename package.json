@@ -58,7 +58,7 @@
     "@form8ion/react-components-scaffolder": "1.2.0",
     "@gaincompliance/python-scaffolder": "1.1.3",
     "@travi/github-scaffolder": "4.2.1",
-    "@travi/javascript-scaffolder": "8.6.1",
+    "@travi/javascript-scaffolder": "9.0.0",
     "@travi/node-app-engine-standard-scaffolder": "1.2.1",
     "@travi/project-scaffolder": "7.2.4",
     "@travi/travis-scaffolder-javascript": "3.0.1"
