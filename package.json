@@ -14,6 +14,7 @@
     "lint:js": "remark --frail .",
     "lint:travis": "travis-lint .travis.yml",
     "lint:peer": "npm ls >/dev/null",
+    "lint:engines": "check-engine",
     "test": "run-s lint:* test:*",
     "test:unit:base": "mocha --recursive test/unit",
     "test:unit": "nyc run-s test:unit:base",
@@ -25,6 +26,9 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "engines": {
+    "node": ">=12"
   },
   "config": {
     "commitizen": {
@@ -39,6 +43,7 @@
     "babel-register": "6.26.0",
     "chai": "^4.2.0",
     "chai-as-promised": "7.1.1",
+    "check-engine": "^1.8.1",
     "codecov": "3.6.1",
     "commitlint-config-gain": "1.0.18",
     "cz-conventional-changelog": "3.0.2",
