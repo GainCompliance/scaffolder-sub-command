@@ -13,6 +13,7 @@
     "clean": "rimraf lib/",
     "lint:js": "remark --frail .",
     "lint:travis": "travis-lint .travis.yml",
+    "lint:peer": "npm ls >/dev/null",
     "test": "run-s lint:* test:*",
     "test:unit:base": "mocha --recursive test/unit",
     "test:unit": "nyc run-s test:unit:base",
