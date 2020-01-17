@@ -4,5 +4,4 @@ notifications:
 import:
   - source: form8ion/.travis-ci:node.yml
   - source: GainCompliance/.travis-ci:authenticated-semantic-release.yml
-before_script: npm ls >/dev/null
 after_success: npm run coverage:report
