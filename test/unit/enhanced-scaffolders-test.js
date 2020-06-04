@@ -7,6 +7,7 @@ import {scaffold as scaffoldReactComponents} from '@form8ion/react-components-sc
 import any from '@travi/any';
 import {assert} from 'chai';
 import sinon from 'sinon';
+import {scaffold as stubScaffolder} from '../../src/stub';
 import {javascript, githubPrompt} from '../../src/enhanced-scaffolders';
 
 suite('scaffolder factories', () => {
@@ -39,10 +40,12 @@ suite('scaffolder factories', () => {
         },
         ciServices: {Travis: {scaffolder: scaffoldTravis, public: true, private: true}},
         hosts: {
-          'App Engine Standard': {projectTypes: ['node'], scaffolder: scaffoldAppEngine}
+          'Google App Engine Standard': {projectTypes: ['node'], scaffolder: scaffoldAppEngine},
+          'Google Cloud Functions': {projectTypes: ['node'], scaffolder: stubScaffolder}
         },
         applicationTypes: {
-          Hapi: {scaffolder: scaffoldHapi}
+          Hapi: {scaffolder: scaffoldHapi},
+          'Single-Entry Function': {scaffolder: stubScaffolder}
         },
         packageTypes: {
           'React Component Library': {scaffolder: scaffoldReactComponents}

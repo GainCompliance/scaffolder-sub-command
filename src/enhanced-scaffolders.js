@@ -4,6 +4,7 @@ import {scaffold as scaffoldTravis} from '@travi/travis-scaffolder-javascript';
 import {scaffold as scaffoldAppEngine} from '@travi/node-app-engine-standard-scaffolder';
 import {scaffold as scaffoldHapi} from '@form8ion/hapi-scaffolder';
 import {scaffold as scaffoldReactComponents} from '@form8ion/react-components-scaffolder';
+import {scaffold as stubScaffolder} from './stub';
 
 export function javascript(options) {
   return scaffoldJavaScript({
@@ -20,10 +21,12 @@ export function javascript(options) {
     },
     ciServices: {Travis: {scaffolder: scaffoldTravis, public: true, private: true}},
     hosts: {
-      'App Engine Standard': {projectTypes: ['node'], scaffolder: scaffoldAppEngine}
+      'Google App Engine Standard': {projectTypes: ['node'], scaffolder: scaffoldAppEngine},
+      'Google Cloud Functions': {projectTypes: ['node'], scaffolder: stubScaffolder}
     },
     applicationTypes: {
-      Hapi: {scaffolder: scaffoldHapi}
+      Hapi: {scaffolder: scaffoldHapi},
+      'Single-Entry Function': {scaffolder: stubScaffolder}
     },
     packageTypes: {
       'React Component Library': {scaffolder: scaffoldReactComponents}
