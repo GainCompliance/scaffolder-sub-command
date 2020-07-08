@@ -38,7 +38,7 @@
   "devDependencies": {
     "@gaincompliance/eslint-config-gain": "^1.0.52",
     "@gaincompliance/remark-preset-lint": "^1.0.4",
-    "@travi/any": "2.0.9",
+    "@travi/any": "2.0.10",
     "babel-preset-travi": "1.4.2",
     "babel-register": "6.26.0",
     "chai": "^4.2.0",
