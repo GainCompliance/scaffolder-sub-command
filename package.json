@@ -44,7 +44,7 @@
     "chai": "^4.2.0",
     "chai-as-promised": "7.1.1",
     "check-engine": "^1.8.1",
-    "codecov": "3.7.0",
+    "codecov": "3.7.1",
     "commitlint-config-gain": "1.0.21",
     "cz-conventional-changelog": "3.2.0",
     "husky": "^4.0.2",
