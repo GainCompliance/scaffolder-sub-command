@@ -12,7 +12,6 @@
   "scripts": {
     "clean": "rimraf lib/",
     "lint:js": "remark --frail .",
-    "lint:travis": "travis-lint .travis.yml",
     "lint:peer": "npm ls >/dev/null",
     "lint:engines": "check-engine",
     "test": "run-s lint:* test:*",
@@ -56,8 +55,7 @@
     "rimraf": "3.0.2",
     "rollup": "^2.0.0",
     "rollup-plugin-auto-external": "^2.0.0",
-    "sinon": "^9.0.0",
-    "travis-lint": "^1.0.0"
+    "sinon": "^9.0.0"
   },
   "dependencies": {
     "@form8ion/hapi-scaffolder": "2.0.1",
