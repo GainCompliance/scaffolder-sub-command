@@ -58,7 +58,7 @@
     "sinon": "^9.0.0"
   },
   "dependencies": {
-    "@form8ion/hapi-scaffolder": "2.0.2",
+    "@form8ion/hapi-scaffolder": "2.0.3",
     "@form8ion/jest-scaffolder": "1.0.0",
     "@form8ion/mocha-scaffolder": "1.0.0",
     "@form8ion/react-components-scaffolder": "2.2.1",
