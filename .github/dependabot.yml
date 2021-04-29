@@ -1,0 +1,38 @@
+version: 2
+registries:
+  npm-registry-registry-npmjs-org:
+    type: npm-registry
+    url: https://registry.npmjs.org
+    token: "${{secrets.NPM_REGISTRY_REGISTRY_NPMJS_ORG_TOKEN}}"
+
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "11:00"
+  open-pull-requests-limit: 99
+  ignore:
+  - dependency-name: "@travi/javascript-scaffolder"
+    versions:
+    - 12.2.6
+    - 12.2.7
+    - 12.2.8
+  - dependency-name: "@travi/project-scaffolder"
+    versions:
+    - 9.0.9
+  - dependency-name: mocha
+    versions:
+    - 8.2.1
+    - 8.3.0
+    - 8.3.1
+  - dependency-name: chai
+    versions:
+    - 4.3.2
+    - 4.3.3
+  commit-message:
+    prefix: fix
+    prefix-development: chore
+    include: scope
+  registries:
+  - npm-registry-registry-npmjs-org
