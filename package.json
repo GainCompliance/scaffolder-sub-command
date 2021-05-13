@@ -63,7 +63,7 @@
     "@form8ion/mocha-scaffolder": "1.0.0",
     "@form8ion/react-components-scaffolder": "2.2.3",
     "@gaincompliance/python-scaffolder": "1.1.3",
-    "@travi/github-scaffolder": "5.3.3",
+    "@travi/github-scaffolder": "6.0.0",
     "@travi/javascript-scaffolder": "12.2.12",
     "@travi/node-app-engine-standard-scaffolder": "1.2.7",
     "@travi/project-scaffolder": "10.0.0",
